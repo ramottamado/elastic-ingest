@@ -12,7 +12,7 @@ region = 'YOUR AWS REGION'
 service = 'YOUR AWS SERVICE'
 credentials = boto3.Session(
     aws_access_key_id='YOUR AWS ACCES KEY',
-    aws_secret_access_key='YOUR AWS ACCES KEY'
+    aws_secret_access_key='YOUR AWS SECRET KEY'
 ).get_credentials()
 awsauth = AWS4Auth(credentials.access_key, credentials.secret_key, region, service)
 
